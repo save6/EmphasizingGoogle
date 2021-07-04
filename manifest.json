@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "version": "1.0",
+    "name": "Emphasizing Google",
+    "description": "Googleで検索した際に登録したドメインのサイトをハイライト表示する拡張機能",
+    "content_scripts": [{
+      "matches": ["*://www.google.com/*"],
+      "js": ["jquery-3.6.0.min.js", "main.js"]
+    }],
+    "permissions": [
+      "https://www.google.com/search",
+      "storage"
+    ],
+    "options_page": "options.html"
+}
